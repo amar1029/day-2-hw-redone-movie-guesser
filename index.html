@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Movie Guesser</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card mt-5 justify-content-center" style="width: 43rem;">
+          <div class="card-body">
+            <h1 class="card-title text-center">Movie Guessing Game!</h1>
+            <hr />
+            <h5 class="card-subtitle mt-3 text-muted">
+              Guess the movie based on the clue given below! If you need another
+              hint, press the "Give me a hint" button.
+            </h5>
+            <p class="card-text my-3" id="explanation">
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id = "guess"
+                placeholder="Type Guess Here"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-success" type="button" id="guessBtn">
+                  Guess!
+                </button>
+              </div>
+            </div>
+            <button class="btn btn-warning" type="button" id="hintBtn">
+              Give me a hint
+            </button>
+            <p class="card-text mt-3" id="hintExplanation">
+
+            </p>
+    
+            <div id="results">
+                <hr>
+                <p class="card-text text-center" id="text-results">
+                    
+                </p>
+                <p class="card-text text-center" id="guesses-left">
+
+                </p>
+          </div>
+          <div class="row justify-content-center">
+          <div id="play-again">
+            <button type="button" class="btn btn-dark mt-2" id="playAgainBtn">Play Again?</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
